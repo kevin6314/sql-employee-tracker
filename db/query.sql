@@ -23,12 +23,12 @@ ORDER BY employee_id;
 INSERT INTO departments (department) VALUES ("department");
 
 --ADD A ROLE
-INSERT INTO roles (title, department, salary) VALUES ("title", "department", "salary");
+INSERT INTO roles (title, department_id, salary) VALUES ("title", "department", "salary");
 
 --ADD AN EMPLOYEE
-INSERT INTO employees (first_name, last_name, manager, title) VALUES ("first_name", "last_name", "manager", "title");
+INSERT INTO employees (first_name, last_name, manager, role_id) VALUES ("first_name", "last_name", "manager", "title");
 
 --UPDATE AN EMPLOYEE
 UPDATE employees
-SET title = "New Role"
-WHERE employee_id = "Employee_ID";
+SET role_id = "New Role"
+WHERE id = "Employee_ID";
